@@ -1,12 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const LOBSchema = new Schema({
-    category_name: { Type: String },
-    company_name: { Type: String },
-    policy_number: { Type: String }
-})
+  category_name: { type: String },
+  company_name: { type: String },
+  policy_number: { type: String },
+});
 
-const LOB = mongoose.model('LOB', LOBSchema);
+const LOB = mongoose.model("LOB", LOBSchema);
 
 module.exports = LOB;
