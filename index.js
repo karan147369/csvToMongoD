@@ -1,3 +1,5 @@
+const database = require("./config/database");
+database.connect();
 const express = require("express");
 const app = express();
 const bodyparser = require("body-parser");
