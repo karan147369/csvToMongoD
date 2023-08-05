@@ -61,8 +61,6 @@ controller.importFile = (req, res) => {
 
                 }
                 const userResult = await User.insertMany(user);
-                // if (result !== null) 
-                // res.render
 
                 const policyResult = await Policy.insertMany(policy);
                 const agentResult = await Agent.insertMany(agent);
