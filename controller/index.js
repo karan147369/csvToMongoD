@@ -61,7 +61,6 @@ controller.importFile = (req, res) => {
 
                 }
                 const userResult = await User.insertMany(user);
-
                 const policyResult = await Policy.insertMany(policy);
                 const agentResult = await Agent.insertMany(agent);
                 const lobResult = await LOB.insertMany(lob);
@@ -77,7 +76,7 @@ controller.importFile = (req, res) => {
 
 
             })
-            .catch(err => console.log(err))
+            .catch(err => console.log("Error catched: " + err))
     } catch (e) { }
 };
 
