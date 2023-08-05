@@ -1,0 +1,19 @@
+#container {
+    background-color: #a2b9bc;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+
+#form {
+    width: 50%;
+    margin: auto;
+}
+
+#message {
+    height: 20px;
+    width: 31%;
+    margin-left: 25%;
+    border: 1px dotted green;
+    color: red;
+}
