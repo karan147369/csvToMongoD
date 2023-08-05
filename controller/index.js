@@ -76,8 +76,10 @@ controller.importFile = (req, res) => {
 
 
             })
-            .catch(err => console.log("Error catched: " + err))
-    } catch (e) { }
+            .catch(err => res.render('index.ejs', { message: err.message }))
+    } catch (e) {
+        res.redner('index.ejs', { message: e.message })
+    }
 };
 
 module.exports = controller;
